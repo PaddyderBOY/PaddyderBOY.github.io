@@ -15,22 +15,46 @@ function main() {
                 }
             }
         });
-        $('#AA').click(function (e) {
-            $.get("A.html", function (data) {
+
+        $('.A').click(function (e) {
+            $.get("B.html", function (data) {
                 $('#question').fadeOut('slow', function () {
                     $('#question').replaceWith($(data)).fadeIn('slow');
-                    $('.slideshowreview').slick({
-                        slidesToShow: 1,
-                        slidesToScroll: 1,
-                        autoplay: true,
-                        autoplaySpeed: 8000,
-                        dots: true,
-                        arrows: true,
-                    })
+                    $('.B').click(function (e) {
+                        $.get("C.html", function (data) {
+                            $('#question').fadeOut('slow', function () {
+                                $('#question').replaceWith($(data)).fadeIn('slow');
+                                $('.C').click(function (e) {
+                                    $.get("D.html", function (data) {
+                                        $('#question').fadeOut('slow', function () {
+                                            $('#question').replaceWith($(data)).fadeIn('slow');
+                                            $('.D').click(function (e) {
+                                                $.get("ErgebnisS8.html", function (data) {
+                                                    $('#question').fadeOut('slow', function () {
+                                                        $('#question').replaceWith($(data)).fadeIn('slow');
+                                                        $('.slideshowreview').slick({
+                                                            slidesToShow: 1,
+                                                            slidesToScroll: 1,
+                                                            autoplay: true,
+                                                            autoplaySpeed: 8000,
+                                                            dots: true,
+                                                            arrows: true,
+                                                        })
+                                                    });
+                                                });
+                                            });
+                                        });
+                                    });
+                                });
+                            });
+                        });
+                    });
                 });
             });
 
         });
+
+
 
     }());
 
