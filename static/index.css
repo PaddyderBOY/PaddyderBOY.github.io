@@ -148,7 +148,6 @@ h4 {
 }
 
 #menu a.navbar-brand {
-    font-family: 'Dancing Script', cursive;
     font-size: 36px;
     color: #ffffff;
     font-weight: 700;
@@ -226,6 +225,7 @@ h4 {
     width: 200px;
     height: 200px;
     position: relative;
+    color:white;
 }
 
 .centericon {
