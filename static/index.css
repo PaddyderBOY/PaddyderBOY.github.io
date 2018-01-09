@@ -4,7 +4,7 @@
     width: 200px;
     text-align: center;
     border-radius: 50%;
-    background-color: #5182de;
+    background-color: #1976d2;
 }
 
 .masthead {
@@ -112,36 +112,19 @@ body {
     padding-top: 350px;
 }
 
-#intro {
-    display: table;
-    width: 100%;
-    padding: 0;
-    background: url(../images/technik_wallpaper.jpg) no-repeat center center;
-    background-color: #e5e5e5;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-}
-
-.intro-padding {
-    padding-top: 300px;
-    padding-bottom: 300px;
-}
-
 h4 {
     font-size: 3em;
-    color: #ffffff;
+    color: #000000;
 }
 
 .btn-custom {
     text-transform: uppercase;
     color: #fff;
-    background-color: #5182de;
+    background-color: #63a4ff;
     border: 0;
     padding: 14px 20px;
     margin: 0;
-    font-size: 16px;
+    font-size: 28px;
     font-weight: 500;
     letter-spacing: 0.5px;
     border-radius: 0;
@@ -152,4 +135,114 @@ h4 {
 .btn-custom:hover, .btn-custom:focus, .btn-custom.focus, .btn-custom:active, .btn-custom.active {
     color: #fff;
     background-color: #b4b4b4;
+}
+
+#menu {
+    padding: 20px;
+    transition: all 0.8s;
+}
+
+#menu.navbar-default {
+    background-color: #004ba0;
+    border-color: #0c5460;
+}
+
+#menu a.navbar-brand {
+    font-family: 'Dancing Script', cursive;
+    font-size: 36px;
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+#menu.navbar-default .navbar-nav > li > a {
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 15px;
+    padding: 5px 0;
+    border: 2px solid transparent;
+    letter-spacing: 0.5px;
+    margin: 10px 15px 0 15px;
+}
+
+#menu.navbar-default .navbar-nav > li > a:hover {
+    color: #bcbcbc;
+}
+
+.on {
+    background-color: #262626 !important;
+    padding: 0 !important;
+    padding: 10px 0 !important;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: #5182de !important;
+    background-color: transparent;
+}
+
+.navbar-toggle {
+    border-radius: 0;
+}
+
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: #5182de;
+    border-color: #5182de;
+}
+
+.navbar-default .navbar-toggle:hover > .icon-bar {
+    background-color: #FFF;
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    height: 3px;
+    background-color: #cccccc;
+}
+
+.imageslide {
+    position: relative;
+    display: inline-block;
+    text-align: center;
+}
+
+.button-center-img {
+    position: absolute;
+    bottom: 50%;
+    right: 50%;
+    margin: 0px -150px -0px 0px;
+}
+
+.resizeimg {
+    width: 100%;
+    height: 600px;
+}
+
+.roundicon {
+    margin-top: -100px;
+    margin-left: 75px;
+    border-radius: 50%;
+    background: #1976d2;
+    text-align: center;
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+
+.centericon {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+}
+
+.round {
+    border-radius: 50%;
+    height: 175px;
+    width: 175px;
+    margin-left: 50%;
+    transform: translate(-50%);
+}
+
+.paddingquoat {
+    padding-top: 20px;
 }

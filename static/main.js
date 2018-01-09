@@ -9,36 +9,49 @@ function main() {
                 target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
                 if (target.length) {
                     $('html,body').animate({
-                        scrollTop: target.offset().top - 40
+                        scrollTop: target.offset().top
                     }, 900);
                     return false;
                 }
             }
         });
         $('#A').click(function (e) {
-            $('#question').fadeOut('slow', function () {
-                $('#question').replaceWith('<div id="question">\n' +
-                    '        <div class="row top-buffer border">\n' +
-                    '            <div class="col-12 top-buffer">\n' +
-                    '                <h3>2. Frage</h3>\n' +
-                    '            </div>\n' +
-                    '            <div class="col-4 text-center col-question-buffer">\n' +
-                    '                <button type="button" class="btn btn-circle btn-xl">Option 1</button>\n' +
-                    '            </div>\n' +
-                    '            <div class="col-4 text-center col-question-buffer">\n' +
-                    '                <button type="button" class="btn btn-circle btn-xl">Option 2</button>\n' +
-                    '            </div>\n' +
-                    '            <div class="col-4 text-center col-question-buffer">\n' +
-                    '                <a href="#question" class="btn btn-custom" id="triggerButton">Swap Divs</a>\n' +
-                    '            </div>\n' +
-                    '        </div>\n' +
-                    '    </div>\n' +
-                    '</div>').fadeIn('slow');
+            $.get("A.html", function (data) {
+                $('#question').fadeOut('slow', function () {
+                    $('#question').replaceWith($(data)).fadeIn('slow');
+                    $('.slideshowreview').slick({
+                        slidesToShow: 1,
+                        slidesToScroll: 1,
+                        autoplay: true,
+                        autoplaySpeed: 8000,
+                        dots: true,
+                        arrows: true,
+                    })
+                });
             });
+
         });
+
     }());
 
 
 }
 
 main();
+
+$(document).ready(function () {
+    $('.slideshowintro').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 8000,
+    });
+    $('.slideshowreview').slick({
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 8000,
+        dots: true,
+        arrows: true,
+    });
+});
