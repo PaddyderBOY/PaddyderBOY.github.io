@@ -15,7 +15,7 @@ function main() {
                 }
             }
         });
-        $('#A').click(function (e) {
+        $('#AA').click(function (e) {
             $.get("A.html", function (data) {
                 $('#question').fadeOut('slow', function () {
                     $('#question').replaceWith($(data)).fadeIn('slow');
