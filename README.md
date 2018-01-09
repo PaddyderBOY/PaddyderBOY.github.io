@@ -1,2 +1,0 @@
-# PaddyderBOY.github.io
-TechSuche
