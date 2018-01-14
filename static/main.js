@@ -9,7 +9,7 @@ function main() {
                 target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
                 if (target.length) {
                     $('html,body').animate({
-                        scrollTop: target.offset().top-60
+                        scrollTop: target.offset().top
                     }, 900);
                     return false;
                 }
@@ -69,6 +69,7 @@ $(document).ready(function () {
         slidesToScroll: 1,
         autoplay: true,
         autoplaySpeed: 8000,
+        arrows:false
     });
     $('.slideshowreview').slick({
         slidesToShow: 1,
@@ -78,4 +79,15 @@ $(document).ready(function () {
         dots: true,
         arrows: true,
     });
+    AOS.init();
+});
+
+// Show Menu on Book
+$(window).bind('scroll', function() {
+    var navHeight = $(window).height() - 500;
+    if ($(window).scrollTop() > navHeight) {
+        $('.navbar-default').addClass('on');
+    } else {
+        $('.navbar-default').removeClass('on');
+    }
 });
