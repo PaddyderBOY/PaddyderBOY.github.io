@@ -20,6 +20,13 @@ function main() {
             $.get("B.html", function (data) {
                 $('#question').fadeOut('slow', function () {
                     $('#question').replaceWith($(data)).fadeIn('slow');
+                    $('.Aback').click(function (e) {
+                        $.get("A.html", function (backdata) {
+                            $('#question').fadeOut('slow', function () {
+                                $('#question').replaceWith($(backdata)).fadeIn('slow');
+                            });
+                        });
+                    });
                     $('.B').click(function (e) {
                         $.get("C.html", function (data) {
                             $('#question').fadeOut('slow', function () {
@@ -51,6 +58,7 @@ function main() {
                     });
                 });
             });
+
 
         });
 

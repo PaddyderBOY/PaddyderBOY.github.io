@@ -17,13 +17,11 @@
 }
 
 .middle {
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%)
+    margin: auto;
+    display: block;
+}
+.parent{
+    position: relative;
 }
 
 .imagecontainer:hover .image {
@@ -52,8 +50,9 @@ body {
 }
 
 .about{
-    padding-top: 10px;
-    padding-bottom: 10px;
+}
+#about{
+    padding-bottom: 20px;
 }
 
 h4 {
@@ -141,6 +140,7 @@ h4 {
 .resizeimg {
     width: 100%;
     height: 725px;
+    object-fit: cover;
 }
 .imagezoomcontainer:hover img,
 .imagezoomcontainer:focus img{
@@ -158,6 +158,7 @@ h4 {
     transition: all 1s ease;
     position: relative;
     right:-50%;
+    cursor: pointer;
 }
 
 .imagezoomcontainer{
@@ -170,6 +171,7 @@ h4 {
     width: 100%;
     height: 100%;
     overflow: hidden;
+
 }
 
 .roundicon {
@@ -233,6 +235,7 @@ h4 {
     border-radius: 50%;
     border: #67aeca 2px solid;
     display: inline-block;
+    cursor: pointer;
 }
 
 .dot{
@@ -251,4 +254,8 @@ h4 {
     border-radius: 50%;
     border: #67aeca 2px solid;
     display: inline-block;
+}
+
+.progressbar{
+    padding-bottom: 30px;
 }
