@@ -231,7 +231,7 @@ body {
     background: url(../images/free-from-section-cover.png) center center no-repeat;
     background-size: cover;
     text-align: center;
-
+    padding-bottom: 60px;
 }
 .questionback{
     padding-bottom: 50px;
