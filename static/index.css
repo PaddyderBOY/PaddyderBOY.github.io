@@ -55,12 +55,32 @@ body {
     padding-bottom: 20px;
 }
 
-h4 {
-    font-size: 3em;
-    color: #000000;
-}
-
 .btn-custom {
+     text-transform: uppercase;
+     color: #fff;
+     background-color: #67aeca;
+     border: 0;
+     padding-top: 14px;
+     padding-right: 35px;
+     padding-left: 35px;
+     padding-bottom: 14px;
+     font-size: 28px;
+     font-weight: 500;
+     letter-spacing: 1px;
+     transition: all 0.5s;
+     border-radius: 40px;
+ }
+
+.btn-custom:hover, .btn-custom:focus, .btn-custom.focus, .btn-custom:active, .btn-custom.active {
+    color: #fff;
+    background-color: #6b7a8f;
+}
+.bottom{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.btn-buy {
     text-transform: uppercase;
     color: #fff;
     background-color: #67aeca;
@@ -69,14 +89,14 @@ h4 {
     padding-right: 35px;
     padding-left: 35px;
     padding-bottom: 14px;
-    font-size: 28px;
+    font-size: 20px;
     font-weight: 500;
     letter-spacing: 1px;
     transition: all 0.5s;
     border-radius: 40px;
 }
 
-.btn-custom:hover, .btn-custom:focus, .btn-custom.focus, .btn-custom:active, .btn-custom.active {
+.btn-buy:hover, .btn-buy:focus, .btn-buy.focus, .btn-buy:active, .btn-buy.active {
     color: #fff;
     background-color: #6b7a8f;
 }
@@ -258,4 +278,36 @@ h4 {
 
 .progressbar{
     padding-bottom: 30px;
+}
+
+.stars{
+
+}
+
+.alternativeimg{
+    height: 175px;
+}
+.wrapper{
+    position: relative;
+    height: 150px;
+}
+.progressbarAlternative{
+    width: 125px;
+    height: 125px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    position: absolute;
+}
+
+.footeralternative{
+    margin-top: 20px;
+    padding: 5px 5px;
+    background-color: #fafafa;
+}
+
+.alternative{
+    padding-top: 20px;
+    border: 1px solid rgba(174, 174, 174, 0.15);
+
 }
