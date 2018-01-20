@@ -104,45 +104,380 @@
 </div>
 <!-- main -->
 <div id="main">
-    <div class="questionback">
-        <div class="container">
-            <div id=question>
-                <div class="row">
-                    <div class="col-12 bottom-buffer">
-                        <h2>1. Wie wollen Sie das Gerät nutzen und verstauen?</h2>
-                    </div>
-                    <div class="progressbar">
-                        <div class="dotcurrent"></div>
-                        <div class="dot"></div>
-                        <div class="dot"></div>
-                        <div class="dot"></div>
-                    </div>
-                    <div class="col-md-4 A" align="center">
-                        <div class="imagezoom">
-                            <div class="imagezoomcontainer">
-                                <img src="images/FragenMini/Frage%201%20-%20Option%201%20mini.jpg" class="A">
-                            </div>
-                        </div>
-                        <h3>In einer Hand halten & in der Hosentasche tragen.</h3>
-                    </div>
-                    <div class="col-md-4" align="center">
-                        <div class="imagezoom">
-                            <div class="imagezoomcontainer">
-                                <img src="images/FragenMini/Frage%201%20-%20Option%202%20mini.jpg" class="A">
-                            </div>
-                        </div>
-                        <h3>In zwei Händen halten & in kleinen Tragetaschen tragen.</h3>
-                    </div>
-                    <div class="col-md-4" align="center">
-                        <div class="imagezoom">
-                            <div class="imagezoomcontainer">
-                                <img src="images/FragenMini/Frage%201%20-%20Option%203%20mini.jpg" class="A">
-                            </div>
-                        </div>
-                        <h3>Auf dem Schoß oder Tisch nutzen & in größeren Taschen tragen.</h3>
-                    </div>
+    <div class="container">
+        <div class="row">
+            <div class="wizard">
+                <div class="wizard-inner">
+                    <div class="connecting-line"></div>
+                    <ul class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active">
+                            <a href="#step1" data-toggle="tab" aria-controls="step1" role="tab" title="Step 1">
+                                <span class="round-tab">
+                                    <i class="fas fa-expand-arrows-alt centericon"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li role="presentation" class="disabled">
+                            <a href="#step2" data-toggle="tab" aria-controls="step2" role="tab" title="Step 2">
+                                <span class="round-tab">
+                                    <i class="glyphicon glyphicon-pencil centericon"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li role="presentation" class="disabled">
+                            <a href="#step3" data-toggle="tab" aria-controls="step3" role="tab" title="Step 3">
+                                <span class="round-tab">
+                                    <i class="fas fa-camera centericon"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li role="presentation" class="disabled">
+                            <a href="#step4" data-toggle="tab" aria-controls="step4" role="tab" title="Step 4">
+                                <span class="round-tab">
+                                    <i class="fas fa-euro-sign centericon"></i>
+                                </span>
+                            </a>
+                        </li>
+                        <li role="presentation" class="disabled">
+                            <a href="#complete" data-toggle="tab" aria-controls="complete" role="tab"
+                               title="Complete">
+                                <span class="round-tab">
+                                    <i class="fas fa-check"></i>
+                                </span>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </div>
+            <form role="form">
+                <div class="tab-content">
+                    <div class="tab-pane active" role="tabpanel" id="step1">
+                        <div class="col-12 bottom-buffer">
+                            <h2>1. Wie wollen Sie das Gerät nutzen und verstauen?</h2>
+                        </div>
+                        <div class="col-md-4 A" align="center">
+                            <div class="imagezoom">
+                                <div class="imagezoomcontainer">
+                                    <img src="images/FragenMini/Frage%201%20-%20Option%201%20mini.jpg" class="A">
+                                </div>
+                            </div>
+                            <h3>In einer Hand halten & in der Hosentasche tragen.</h3>
+                        </div>
+                        <div class="col-md-4" align="center">
+                            <div class="imagezoom">
+                                <div class="imagezoomcontainer">
+                                    <img src="images/FragenMini/Frage%201%20-%20Option%202%20mini.jpg" class="A">
+                                </div>
+                            </div>
+                            <h3>In zwei Händen halten & in kleinen Tragetaschen tragen.</h3>
+                        </div>
+                        <div class="col-md-4" align="center">
+                            <div class="imagezoom">
+                                <div class="imagezoomcontainer">
+                                    <img src="images/FragenMini/Frage%201%20-%20Option%203%20mini.jpg" class="A">
+                                </div>
+                            </div>
+                            <h3>Auf dem Schoß oder Tisch nutzen & in größeren Taschen tragen.</h3>
+                        </div>
+                        <ul class="list-inline pull-right">
+                            <li>
+                                <button type="button" class="btn btn-default next-step">Überspringen</button>
+                            </li>
+                            <li>
+                                <button type="button" class="btn btn-primary next-step">Weiter</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane" role="tabpanel" id="step2">
+                        <div class="col-12 bottom-buffer">
+                            <h2>2. Welche Aufgaben wollen Sie mit dem Gerät erledigen?</h2>
+                        </div>
+                        <div class="col-md-4 A" align="center">
+                            <div class="imagezoom">
+                                <div class="imagezoomcontainer">
+                                    <img src="images/FragenMini/Frage%202%20-%20Option%201%20mini.jpg" class="B">
+                                </div>
+                            </div>
+                            <h3>Grundlegendes, wie telefonieren, Nachrichten lesen.</h3>
+                        </div>
+                        <div class="col-md-4" align="center">
+                            <div class="imagezoom">
+                                <div class="imagezoomcontainer">
+                                    <img src="images/FragenMini/Frage%202%20-%20Option%202%20mini.jpg" class="B">
+                                </div>
+                            </div>
+                            <h3>Online surfen und hochauflösende Videos ansehen.</h3>
+                        </div>
+                        <div class="col-md-4" align="center">
+                            <div class="imagezoom">
+                                <div class="imagezoomcontainer">
+                                    <img src="images/FragenMini/Frage%202%20-%20Option%203%20mini.jpg" class="B">
+                                </div>
+                            </div>
+                            <h3>Modernste Funktionen, z.B. neueste Spiele spielen.</h3>
+                        </div>
+                        <ul class="list-inline pull-right">
+                            <li>
+                                <button type="button" class="btn btn-default prev-step">Zurück</button>
+                            </li>
+                            <li>
+                                <button type="button" class="btn btn-default next-step">Überspringen</button>
+                            </li>
+                            <li>
+                                <button type="button" class="btn btn-primary next-step">Weiter</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane" role="tabpanel" id="step3">
+                        <div class="col-12 bottom-buffer">
+                            <h2>3. Wie wichtig sind Ihnen Foto- und Videofunktionen?</h2>
+                        </div>
+                        <div class="col-md-4 A" align="center">
+                            <div class="imagezoom">
+                                <div class="imagezoomcontainer">
+                                    <img src="images/FragenMini/Frage%203%20-%20Option%201%20mini.jpg" class="C">
+                                </div>
+                            </div>
+                            <h3>Weniger wichtig - ich nutze die Kamera nur selten.</h3>
+                        </div>
+                        <div class="col-md-4" align="center">
+                            <div class="imagezoom">
+                                <div class="imagezoomcontainer">
+                                    <img src="images/FragenMini/Frage%203%20-%20Option%202%20mini.jpg" class="C">
+                                </div>
+                            </div>
+                            <h3>Mäßig wichtig - es sollten gute Fotos entstehen.</h3>
+                        </div>
+                        <div class="col-md-4" align="center">
+                            <div class="imagezoom">
+                                <div class="imagezoomcontainer">
+                                    <img src="images/FragenMini/Frage%203%20-%20Option%203%20mini.jpg" class="C">
+                                </div>
+                            </div>
+                            <h3>Sehr wichtig - ich will die tollsten Fotos und Videos machen.</h3>
+                        </div>
+                        <ul class="list-inline pull-right">
+                            <li>
+                                <button type="button" class="btn btn-default prev-step">Zurück</button>
+                            </li>
+                            <li>
+                                <button type="button" class="btn btn-default next-step">Überspringen</button>
+                            </li>
+                            <li>
+                                <button type="button" class="btn btn-primary btn-info-full next-step">Weiter</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane" role="tabpanel" id="step4">
+                        <div class="col-12 bottom-buffer">
+                            <h2>4. Wie teuer sollte das Gerät sein?</h2>
+                        </div>
+                        <div class="col-md-4 A" align="center">
+                            <div class="imagezoom">
+                                <div class="imagezoomcontainer">
+                                    <img src="images/FragenMini/Frage%204%20-%20Option%201%20mini.jpg" class="D">
+                                </div>
+                            </div>
+                            <h3>Maximal 150 Euro.</h3>
+                        </div>
+                        <div class="col-md-4" align="center">
+                            <div class="imagezoom">
+                                <div class="imagezoomcontainer">
+                                    <img src="images/FragenMini/Frage%204%20-%20Option%202%20mini.jpg" class="D">
+                                </div>
+                            </div>
+                            <h3>Zwischen 200 und 350 Euro.</h3>
+                        </div>
+                        <div class="col-md-4" align="center">
+                            <div class="imagezoom">
+                                <div class="imagezoomcontainer">
+                                    <img src="images/FragenMini/Frage%204%20-%20Option%203%20mini.jpg" class="D">
+                                </div>
+                            </div>
+                            <h3>Gerne teuer, der Preis ist zweitrangig.</h3>
+                        </div>
+                        <ul class="list-inline pull-right">
+                            <li>
+                                <button type="button" class="btn btn-default prev-step">Zurück</button>
+                            </li>
+                            <li>
+                                <button type="button" class="btn btn-default next-step">Überspringen</button>
+                            </li>
+                            <li>
+                                <button type="button" class="btn btn-primary btn-info-full next-step">Weiter</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-pane" role="tabpanel" id="complete">
+                        <div class="row text-center">
+                            <h2>Hurra! Wir haben das optimale Ergebnis für dich gefunden!</h2><br>
+                        </div>
+                        <div class="row s8">
+                            <h2>Samsung Galaxy S8</h2><br>
+                            <div class="col-md-4">
+                                <div class="text-center">
+                                    <img class="handy" src="images/s8.png" height="400px">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div>
+                                    <div class="row text-center">
+                                        <div class="col-md-6">
+                                            Akkulaufzeit:
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="stars">
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="fas fa-star"></i>
+                                                <i class="far fa-star"></i>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row text-center">
+                                    <div class="col-md-6">
+                                        Kamera:
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half"></i>
+                                            <i class="far fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row text-center">
+                                    <div class="col-md-6">
+                                        Display:
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="stars">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row text-center" style="padding-top: 250px">
+                                    <h4>500 €</h4><a
+                                        href="https://www.amazon.de/Samsung-Smartphone-Touch-Display-interner-Speicher-midnight-black/dp/B06XJ49G5B/ref=sr_1_1?s=telephone&ie=UTF8&qid=1515513993&sr=1-1&keywords=s8"
+                                        class="btn btn-buy">Zum Angebot</a>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="row"><h4>Das sagen zufriedene Kunden:</h4></div>
+                                <div class="slideshowreview">
+                                    <div>
+                                        <div class="text-center">
+                                            <img src="images/ppp.jpg" class="round">
+                                        </div>
+                                        <div class="text-center paddingquoat">
+                                            <i class="fas fa-quote-right"></i>
+                                        </div>
+                                        <div class="text-center">
+                                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                            eirmod tempor
+                                            invidunt ut
+                                            labore et
+                                            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                                            justo
+                                        </div>
+                                        <div class="text-center paddingquoat">
+                                            <b>Patrick Pap</b><br> Student HS-Weingarten
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="text-center">
+                                            <img src="images/at.jpg" class="round">
+                                        </div>
+                                        <div class="text-center paddingquoat">
+                                            <i class="fas fa-quote-right"></i>
+                                        </div>
+                                        <div class="text-center">
+                                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
+                                            eirmod tempor
+                                            invidunt ut
+                                            labore et
+                                            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
+                                            justo
+                                        </div>
+                                        <div class="text-center paddingquoat">
+                                            <b>Alexander Thomas</b><br> Student HS-Weingarten
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row text-center"> <h3>Alternativen</h3></div>
+                        <div class="row top-buffer">
+                            <div class="col-md-4">
+                                <div class="alternative">
+                                    <div class="row">
+                                        <div class="col-md-6 text-center">
+                                            <img src="images/utwb7qd3.bmp" class="alternativeimg">
+                                        </div>
+                                        <div class="col-md-6 text-center">
+                                            Passt zu:
+                                            <div class="wrapper">
+                                                <div id="progressbarAlternativeHTC"
+                                                     class="progressbarAlternative"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="padding-left: 20px" class="footeralternative">
+                                        <h4>HTC 10</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="alternative">
+                                    <div class="row">
+                                        <div class="col-md-6 text-center">
+                                            <img src="images/40hsti8s.bmp" class="alternativeimg">
+                                        </div>
+                                        <div class="col-md-6 text-center">
+                                            Passt zu:
+                                            <div class="wrapper">
+                                                <div id="progressbarAlternativeIphone"
+                                                     class="progressbarAlternative"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div style="padding-left: 20px" class="footeralternative">
+                                        <h4>IPhone X</h4>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="alternative">
+                                    <div class="row">
+                                        <div class="col-md-6 text-center">
+                                            <img src="images/ijwtcdm7.bmp" class="alternativeimg">
+                                        </div>
+                                        <div class="col-md-6 text-center">
+                                            Passt zu:
+                                            <div class="wrapper">
+                                                <div id="progressbarAlternativeSTablet"
+                                                     class="progressbarAlternative"></div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="footeralternative">
+                                        <h4 style="padding-left: 20px">Samsung Tab S2</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                </div>
+            </form>
         </div>
     </div>
 </div>
@@ -153,8 +488,8 @@
     </div>
     <div class="container">
         <div class="row" data-aos="fade-left" data-aos-duration="1000">
-            <div class="col-md-4" >
-                    <img src="images/jn.jpg" class="round">
+            <div class="col-md-4">
+                <img src="images/jn.jpg" class="round">
             </div>
             <div class="col-md-4 parent">
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
@@ -165,7 +500,7 @@
             </div>
         </div>
         <div class="row" data-aos="fade-right" data-aos-duration="1000">
-            <div class="col-md-4" >
+            <div class="col-md-4">
             </div>
             <div class="col-md-4 parent">
                 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
@@ -181,9 +516,9 @@
                 <img src="images/ppp.jpg" class="round">
             </div>
             <div class="col-md-4 center-block" align="center">
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
-                    labore et
-                    dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo
+                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut
+                labore et
+                dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo
             </div>
             <div class="col-md-4">
             </div>
