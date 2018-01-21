@@ -15,12 +15,24 @@ function main() {
                 }
             }
         });
-        $(".imagezoom").click(function() {  //use a class, since your ID gets mangled3
+        $(".imagezoom").click(function() {
             if ($(this).hasClass("checked")) {
                 $(this).removeClass("checked");
                 return false;
             }
-            $(this).addClass("checked");      //add the class to the clicked element
+            var question=$(this).attr('id').substring(1,2);
+            var id='Q'+question+'A';
+            var questioncontainer=$('#'+id);
+            questioncontainer.removeClass('checked');
+            id='Q'+question+'B';
+            questioncontainer=$('#'+id);
+            questioncontainer.removeClass('checked');
+            id='Q'+question+'C';
+            questioncontainer=$('#'+id);
+            questioncontainer.removeClass('checked');
+
+
+            $(this).addClass("checked");
         });
     }());
 
