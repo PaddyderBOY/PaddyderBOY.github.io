@@ -240,7 +240,6 @@ body {
 #main{
     background: url(../images/free-from-section-cover.png) center center no-repeat;
     background-size: cover;
-    text-align: center;
 }
 
 .fontsize{
@@ -560,4 +559,8 @@ span.round-tab:hover {
     background: url("../images/FragenMini/Frage 4 - Option 3 mini.jpg") no-repeat center center;
     height: 400px;
     width: 100%;
+}
+
+.green{
+    color: #74ca9d;
 }

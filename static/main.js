@@ -55,7 +55,7 @@ $(document).ready(function () {
         autoplay: true,
         autoplaySpeed: 8000,
         dots: true,
-        arrows: true,
+        arrows: false,
     });
     AOS.init();
 
@@ -65,14 +65,17 @@ $(document).ready(function () {
 
     //Wizard
     $('a[data-toggle="tab"]').on('show.bs.tab', function (e) {
-
         var $target = $(e.target);
-
         if ($target.parent().hasClass('disabled')) {
             return false;
         }
-    });
+        $('.slideshowreview').slick('setPosition');
 
+    });
+    $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+        $('.slideshowreview').slick('setPosition');
+
+    });
     $(".next-step").click(function (e) {
 
         var $active = $('.wizard .nav-tabs li.active');
