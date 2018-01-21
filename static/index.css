@@ -132,7 +132,7 @@ body {
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-    color: #6b7a8f !important;
+    color: #67aeca !important;
     background-color: transparent;
 }
 
@@ -154,36 +154,54 @@ body {
     height: 725px;
     object-fit: cover;
 }
-.imagezoomcontainer:hover img,
-.imagezoomcontainer:focus img{
-    -webkit-transform:scale(1.1); /* Safari and Chrome */
-    -moz-transform:scale(1.1); /* Firefox */
-    -ms-transform:scale(1.1); /* IE 9 */
-    -o-transform:scale(1.1); /* Opera */
-    transform:scale(1.1);
+
+.imagezoomcontainer{
+    overflow: hidden;
 }
-.imagezoomcontainer img{
+
+.imagezoom:hover,
+.imagezoom:focus{
+    -webkit-transform:scale(1.025); /* Safari and Chrome */
+    -moz-transform:scale(1.025); /* Firefox */
+    -ms-transform:scale(1.025); /* IE 9 */
+    -o-transform:scale(1.025); /* Opera */
+    transform:scale(1.025);
+}
+.imagezoom{
+    position: relative;
     -webkit-transition: all 1s ease; /* Safari and Chrome */
     -moz-transition: all 1s ease; /* Firefox */
     -o-transition: all 1s ease; /* IE 9 */
     -ms-transition: all 1s ease; /* Opera */
     transition: all 1s ease;
-    position: relative;
-    right:-50%;
-    cursor: pointer;
 }
 
-.imagezoomcontainer{
-    position:relative;
-    float: right;
-    right: 50%;
+.imagezoom:after{
+    position: absolute;
+    content:"";
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    opacity:0;
 }
 
-.imagezoom{
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
+.imagezoom:hover:after  {
+    opacity: .5;
+    background-color: rgba(103, 174, 202, 0.45);
+}
 
+.imagezoom i{
+    display: none;
+
+}
+
+.checked{
+    background-color: rgba(103, 174, 202, 0.78);
+    opacity: .7;
+}
+.checked i{
+    display: block;
 }
 
 .roundicon {
@@ -449,7 +467,97 @@ span.round-tab:hover {
 .wizard li.done span.round-tab i{
     color: #67aeca;
 }
+.btn-primary{
+    background-color: #67aeca;
+    border: 1px solid rgba(174, 174, 174, 0.15);
+}
 .s8{
     border: 1px solid rgba(174, 174, 174, 0.15);
     padding-bottom: 20px;
+}
+
+/* IMAGES QUESTION */
+#Q1A{
+    color: #fff;
+    background-size: cover;
+    background: url("../images/FragenMini/Frage 1 - Option 1 mini.jpg") no-repeat center center;
+    height: 400px;
+    width: 100%;
+}
+#Q1B{
+    color: #fff;
+    background-size: cover;
+    background: url("../images/FragenMini/Frage 1 - Option 2 mini.jpg") no-repeat center center;
+    height: 400px;
+    width: 100%;
+}
+#Q1C{
+    color: #fff;
+    background-size: cover;
+    background: url("../images/FragenMini/Frage 1 - Option 3 mini.jpg") no-repeat center center;
+    height: 400px;
+    width: 100%;
+}
+#Q2A{
+    color: #fff;
+    background-size: cover;
+    background: url("../images/FragenMini/Frage 2 - Option 1 mini.jpg") no-repeat center center;
+    height: 400px;
+    width: 100%;
+}
+#Q2B{
+    color: #fff;
+    background-size: cover;
+    background: url("../images/FragenMini/Frage 2 - Option 2 mini.jpg") no-repeat center center;
+    height: 400px;
+    width: 100%;
+}
+#Q2C{
+    color: #fff;
+    background-size: cover;
+    background: url("../images/FragenMini/Frage 2 - Option 3 mini.jpg") no-repeat center center;
+    height: 400px;
+    width: 100%;
+}
+#Q3A{
+    color: #fff;
+    background-size: cover;
+    background: url("../images/FragenMini/Frage 3 - Option 1 mini.jpg") no-repeat center center;
+    height: 400px;
+    width: 100%;
+}
+#Q3B{
+    color: #fff;
+    background-size: cover;
+    background: url("../images/FragenMini/Frage 3 - Option 2 mini.jpg") no-repeat center center;
+    height: 400px;
+    width: 100%;
+}
+#Q3C{
+    color: #fff;
+    background-size: cover;
+    background: url("../images/FragenMini/Frage 3 - Option 3 mini.jpg") no-repeat center center;
+    height: 400px;
+    width: 100%;
+}
+#Q4A{
+    color: #fff;
+    background-size: cover;
+    background: url("../images/FragenMini/Frage 4 - Option 1 mini.jpg") no-repeat center center;
+    height: 400px;
+    width: 100%;
+}
+#Q4B{
+    color: #fff;
+    background-size: cover;
+    background: url("../images/FragenMini/Frage 4 - Option 2 mini.jpg") no-repeat center center;
+    height: 400px;
+    width: 100%;
+}
+#Q4C{
+    color: #fff;
+    background-size: cover;
+    background: url("../images/FragenMini/Frage 4 - Option 3 mini.jpg") no-repeat center center;
+    height: 400px;
+    width: 100%;
 }

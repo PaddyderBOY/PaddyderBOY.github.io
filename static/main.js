@@ -15,6 +15,13 @@ function main() {
                 }
             }
         });
+        $(".imagezoom").click(function() {  //use a class, since your ID gets mangled3
+            if ($(this).hasClass("checked")) {
+                $(this).removeClass("checked");
+                return false;
+            }
+            $(this).addClass("checked");      //add the class to the clicked element
+        });
     }());
 
 
