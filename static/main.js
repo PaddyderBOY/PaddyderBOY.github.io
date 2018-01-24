@@ -10,10 +10,14 @@ function main() {
                 if (target.length) {
                     $('html,body').animate({
                         scrollTop: target.offset().top-60
-                    }, 900);
+                    }, 800);
                     return false;
                 }
             }
+        });
+        $('body').scrollspy({
+            target: '.navbar-default',
+            offset: 80
         });
         $(".imagezoom").click(function() {
             if ($(this).hasClass("checked")) {
@@ -74,67 +78,14 @@ $(document).ready(function () {
     });
     $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
         if($(e.target).attr('href')=='#complete'){
-            bar.text.style.fontFamily = '"Lato", sans-serif';
-            bar.text.style.fontSize = '2rem';
+            bar.set(0);
             bar.animate(0.86);
-            var bar2 = new ProgressBar.Circle('#progressbarAlternativeIphone',{
-                color: '#aaa',
-                // This has to be the same size as the maximum width to
-                // prevent clipping
-                strokeWidth: 4,
-                trailWidth: 1,
-                easing: 'easeInOut',
-                duration: 1400,
-                from: { color: '#aaa', width: 1 },
-                to: { color: '#5f0f4e', width: 4 },
-                // Set default step function for all animate calls
-                step: function(state, circle) {
-                    circle.path.setAttribute('stroke', state.color);
-                    circle.path.setAttribute('stroke-width', state.width);
-
-                    var value = Math.round(circle.value() * 100);
-                    if (value === 0) {
-                        circle.setText('');
-                    } else {
-                        circle.setText(value+'%');
-                    }
-
-                }
-            });
-            bar2.text.style.fontFamily = '"Lato", sans-serif';
-            bar2.text.style.fontSize = '2rem';
+            bar2.set(0);
             bar2.animate(0.70);
-            var bar3 = new ProgressBar.Circle('#progressbarAlternativeSTablet',{
-                color: '#aaa',
-                // This has to be the same size as the maximum width to
-                // prevent clipping
-                strokeWidth: 4,
-                trailWidth: 1,
-                easing: 'easeInOut',
-                duration: 1400,
-                from: { color: '#aaa', width: 1 },
-                to: { color: '#5f0f4e', width: 4 },
-                // Set default step function for all animate calls
-                step: function(state, circle) {
-                    circle.path.setAttribute('stroke', state.color);
-                    circle.path.setAttribute('stroke-width', state.width);
-
-                    var value = Math.round(circle.value() * 100);
-                    if (value === 0) {
-                        circle.setText('');
-                    } else {
-                        circle.setText(value+'%');
-                    }
-
-                }
-            });
-            bar3.text.style.fontFamily = '"Lato", sans-serif';
-            bar3.text.style.fontSize = '2rem';
+            bar3.set(0);
             bar3.animate(0.56);
             $('.slideshowreview').slick('setPosition');
         }
-
-
     });
     $(".next-step").click(function (e) {
 
@@ -175,6 +126,60 @@ $(document).ready(function () {
 
         }
     });
+    bar.text.style.fontFamily = '"Lato", sans-serif';
+    bar.text.style.fontSize = '2rem';
+    var bar2 = new ProgressBar.Circle('#progressbarAlternativeIphone',{
+        color: '#aaa',
+        // This has to be the same size as the maximum width to
+        // prevent clipping
+        strokeWidth: 4,
+        trailWidth: 1,
+        easing: 'easeInOut',
+        duration: 1400,
+        from: { color: '#aaa', width: 1 },
+        to: { color: '#5f0f4e', width: 4 },
+        // Set default step function for all animate calls
+        step: function(state, circle) {
+            circle.path.setAttribute('stroke', state.color);
+            circle.path.setAttribute('stroke-width', state.width);
+
+            var value = Math.round(circle.value() * 100);
+            if (value === 0) {
+                circle.setText('');
+            } else {
+                circle.setText(value+'%');
+            }
+
+        }
+    });
+    bar2.text.style.fontFamily = '"Lato", sans-serif';
+    bar2.text.style.fontSize = '2rem';
+    var bar3 = new ProgressBar.Circle('#progressbarAlternativeSTablet',{
+        color: '#aaa',
+        // This has to be the same size as the maximum width to
+        // prevent clipping
+        strokeWidth: 4,
+        trailWidth: 1,
+        easing: 'easeInOut',
+        duration: 1400,
+        from: { color: '#aaa', width: 1 },
+        to: { color: '#5f0f4e', width: 4 },
+        // Set default step function for all animate calls
+        step: function(state, circle) {
+            circle.path.setAttribute('stroke', state.color);
+            circle.path.setAttribute('stroke-width', state.width);
+
+            var value = Math.round(circle.value() * 100);
+            if (value === 0) {
+                circle.setText('');
+            } else {
+                circle.setText(value+'%');
+            }
+
+        }
+    });
+    bar3.text.style.fontFamily = '"Lato", sans-serif';
+    bar3.text.style.fontSize = '2rem';
 
 });
 function nextTab(elem) {
