@@ -509,84 +509,84 @@ span.round-tab:hover {
 #Q1A{
     color: #fff;
     background-size: cover;
-    background: url("../images/FragenMini/Frage 1 - Option 1 mini.jpg") no-repeat center center;
+    background: url("../images/450px/Frage 1 - Option 1.jpg") no-repeat center center;
     height: 400px;
     width: 100%;
 }
 #Q1B{
     color: #fff;
     background-size: cover;
-    background: url("../images/FragenMini/Frage 1 - Option 2 mini.jpg") no-repeat center center;
+    background: url("../images/450px/Frage 1 - Option 2.jpg") no-repeat center center;
     height: 400px;
     width: 100%;
 }
 #Q1C{
     color: #fff;
     background-size: cover;
-    background: url("../images/FragenMini/Frage 1 - Option 3 mini.jpg") no-repeat center center;
+    background: url("../images/450px/Frage 1 - Option 3.jpg") no-repeat center center;
     height: 400px;
     width: 100%;
 }
 #Q2A{
     color: #fff;
     background-size: cover;
-    background: url("../images/FragenMini/Frage 2 - Option 1 mini.jpg") no-repeat center center;
+    background: url("../images/450px/Frage 2 - Option 1.jpg") no-repeat center center;
     height: 400px;
     width: 100%;
 }
 #Q2B{
     color: #fff;
     background-size: cover;
-    background: url("../images/FragenMini/Frage 2 - Option 2 mini.jpg") no-repeat center center;
+    background: url("../images/450px/Frage 2 - Option 2.jpg") no-repeat center center;
     height: 400px;
     width: 100%;
 }
 #Q2C{
     color: #fff;
     background-size: cover;
-    background: url("../images/FragenMini/Frage 2 - Option 3 mini.jpg") no-repeat center center;
+    background: url("../images/450px/Frage 2 - Option 3.jpg") no-repeat center center;
     height: 400px;
     width: 100%;
 }
 #Q3A{
     color: #fff;
     background-size: cover;
-    background: url("../images/FragenMini/Frage 3 - Option 1 mini.jpg") no-repeat center center;
+    background: url("../images/450px/Frage 3 - Option 1.jpg") no-repeat center center;
     height: 400px;
     width: 100%;
 }
 #Q3B{
     color: #fff;
     background-size: cover;
-    background: url("../images/FragenMini/Frage 3 - Option 2 mini.jpg") no-repeat center center;
+    background: url("../images/450px/Frage 3 - Option 2.jpg") no-repeat center center;
     height: 400px;
     width: 100%;
 }
 #Q3C{
     color: #fff;
     background-size: cover;
-    background: url("../images/FragenMini/Frage 3 - Option 3 mini.jpg") no-repeat center center;
+    background: url("../images/450px/Frage 3 - Option 3.jpg") no-repeat center center;
     height: 400px;
     width: 100%;
 }
 #Q4A{
     color: #fff;
     background-size: cover;
-    background: url("../images/FragenMini/Frage 4 - Option 1 mini.jpg") no-repeat center center;
+    background: url("../images/450px/Frage 4 - Option 1.jpg") no-repeat center center;
     height: 400px;
     width: 100%;
 }
 #Q4B{
     color: #fff;
     background-size: cover;
-    background: url("../images/FragenMini/Frage 4 - Option 2 mini.jpg") no-repeat center center;
+    background: url("../images/450px/Frage 4 - Option 2.jpg") no-repeat center center;
     height: 400px;
     width: 100%;
 }
 #Q4C{
     color: #fff;
     background-size: cover;
-    background: url("../images/FragenMini/Frage 4 - Option 3 mini.jpg") no-repeat center center;
+    background: url("../images/450px/Frage 4 - Option 3.jpg") no-repeat center center;
     height: 400px;
     width: 100%;
 }
@@ -608,4 +608,9 @@ span.round-tab:hover {
 .ergebnis{
     font-size: 28px;
     padding-bottom: 20px;
+}
+
+.aboutrow{
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
